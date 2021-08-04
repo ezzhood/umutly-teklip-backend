@@ -2,6 +2,7 @@ const express = require('express')
 const dotenv = require('dotenv')
 const cors = require('cors')
 const morgan = require('morgan')
+const { errorHandler } = require('./middlewares')
 
 // env variables path specified
 dotenv.config({ path: './config/configs.env' })
@@ -24,6 +25,9 @@ if (process.env.NODE_ENV === 'development') app.use(morgan('dev'))
 
 // route mounting
 app.use('/api/v1/', require('./routes'))
+
+// errorHandling
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000
 

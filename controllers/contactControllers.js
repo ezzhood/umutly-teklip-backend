@@ -1,3 +1,4 @@
+const { Contact } = require('../models')
 const { asyncHandler } = require('../middlewares')
 
 /**
@@ -6,5 +7,7 @@ const { asyncHandler } = require('../middlewares')
  *   @access  public
  */
 exports.postContact = asyncHandler(async (req, res, next) => {
-  res.status(201).send('posting contact')
+  const contact = await Contact.create(req.body)
+
+  res.status(201).json(contact)
 })
