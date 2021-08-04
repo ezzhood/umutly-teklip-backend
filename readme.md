@@ -43,3 +43,13 @@ To run app in production mode
 ```cmd
 npm start
 ```
+
+## API DOCS
+
+HTTP requests available
+
+POST: /auth/login
+POST: /contacts
+GET: /admingate/contacts (\*token required)
+
+For more information check postman_collectoins
