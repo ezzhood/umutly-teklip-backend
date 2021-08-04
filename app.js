@@ -17,7 +17,11 @@ sequelize
   .catch(err => console.log(`Database error: ${err}`))
 
 // cors enabled TODO: whitelist origin
-app.use(cors())
+app.use(
+  cors({
+    origin: ['http://localhost:4000']
+  })
+)
 // json parser
 app.use(express.json())
 // dev logs

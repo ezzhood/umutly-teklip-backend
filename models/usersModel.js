@@ -1,7 +1,7 @@
+const sequelize = require('../config/database')
 const { Model, DataTypes, Op } = require('sequelize')
 const bcrypt = require('bcryptjs')
 const { ErrorResponse } = require('../utils')
-const sequelize = require('../config/database')
 
 class User extends Model {
   async isEqualToHashed(plainPwd) {

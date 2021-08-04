@@ -5,14 +5,16 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "data:import": "node seeder.js -i",
+    "data:destroy": "node seeder.js -d"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eziz-hudayberdiyev/umutly-teklip-backend.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Eziz Hudayberdiyev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/eziz-hudayberdiyev/umutly-teklip-backend/issues"

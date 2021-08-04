@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize')
 
 module.exports = new Sequelize(
-  process.env.DB_NAME,
+  process.env.DB_NAME || 'umutly',
   process.env.DB_USERNAME || 'postgres',
   process.env.DB_PASSWORD || '123456',
   {
