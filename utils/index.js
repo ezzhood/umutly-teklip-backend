@@ -1,5 +1,5 @@
-const errorResponse = require('./errorResponse')
+const ErrorResponse = require('./errorResponse')
 
 module.exports = {
-  errorResponse
+  ErrorResponse
 }
