@@ -2,9 +2,10 @@
   "name": "umutly_teklip_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -12,9 +13,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/eziz-hudayberdiyev/umutly-teklip-backend/issues"
   },
-  "homepage": "https://github.com/eziz-hudayberdiyev/umutly-teklip-backend#readme"
+  "homepage": "https://github.com/eziz-hudayberdiyev/umutly-teklip-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
 }
