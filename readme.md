@@ -50,7 +50,9 @@ npm start
 HTTP requests available
 
 POST: /auth/login
+
 POST: /contacts
+
 GET: /admingate/contacts (\*token required)
 
 For more information check postman_collectoins
