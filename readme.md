@@ -23,6 +23,7 @@ npm install
 To create admin user, run command from below in your terminal
 
 ```cmd
+
 npm run data:import
 ```
 
